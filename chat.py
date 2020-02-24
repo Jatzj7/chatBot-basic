@@ -29,7 +29,7 @@ def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
 GREETING_INPUTS = ("hello","hi","hey","greetings","what's up","sup")
-GREETING_RESPONSES = ["Bol BC","AA gya Laudu","are kese ho","bol bsdk" ]
+GREETING_RESPONSES = ["Hello","Hi there!","are kese ho","Good to see you!" ]
 def greeting(sentence):
     for word in sentence.split():
         if word.lower() in GREETING_INPUTS:
@@ -70,5 +70,5 @@ while(flag == True):
                 sent_tokens.remove(user_response)
     else:
         flag = False
-        print("Dubey : Bhak Bsdk")
+        print("Dubey : Bbyee!!")
 
